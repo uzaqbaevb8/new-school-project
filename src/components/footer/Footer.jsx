@@ -19,9 +19,9 @@ export const Footer = ({ darkMode }) => {
               <div className="about-school">
                 <div className="footer-logo">
                   <NavLink to='/' className='footer-logo-icon'>
-                    N
+                    40
                   </NavLink>
-                  <NavLink to='/' className='footer-logo-text'>Nurdawlet's School</NavLink>
+                  <NavLink to='/' className='footer-logo-text'>40 School</NavLink>
                 </div>
                 <div className="footer-about">
                   <p>
@@ -32,17 +32,17 @@ export const Footer = ({ darkMode }) => {
                 </div>
                 <div className="footer-social-medias">
                   <div className="social-medias">
-                    <Link to="https://github.com/nurdawletmaksetov">
+                    <Link to="">
                       <Facebook size={20} />
                     </Link>
                   </div>
                   <div className="social-medias">
-                    <Link to="https://github.com/nurdawletmaksetov">
+                    <Link to="">
                       <Instagram size={20} />
                     </Link>
                   </div>
                   <div className="social-medias">
-                    <Link to="https://github.com/nurdawletmaksetov">
+                    <Link to="">
                       <Twitter size={20} />
                     </Link>
                   </div>
@@ -66,19 +66,19 @@ export const Footer = ({ darkMode }) => {
                 <h3>Contact Us</h3>
                 <div className="contact-us">
                   <p>
-                    <MapPin className='contact-us-icon' size={34} />Kateks. 1-Politechnicum, Nukus, Karakhalpakstan, Uzbekistan
+                    <MapPin className='contact-us-icon' size={34} />uzbekistan, karakalpakstan, Nukus, orakbalga, 40-mektep
                   </p>
                   <p>
                     <Phone className='contact-us-icon' size={17} /> +1 234 567 890
                   </p>
                   <p>
-                    <Mail className='contact-us-icon' size={17} /> nurdawletmaksetov@gmail.com
+                    <Mail className='contact-us-icon' size={17} /> 40 schoole @gmail.com
                   </p>
                 </div>
               </div>
             </div>
             <div className="footer-bottom">
-              <p>© 2025 1-POLITECHNIKUM. Developer: Nurdawlet Maksetov.</p>
+              <p>© 2025 Школа No 40. Все права защищены.</p>
             </div>
           </div>
         </Container>

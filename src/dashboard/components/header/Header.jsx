@@ -36,7 +36,7 @@ export const Header = ({ sidebarWidth = 180 }) => {
                 <ActionIcon radius={50} p={4}>
                     <User />
                 </ActionIcon>
-                <Text>Nurdawlet</Text>
+                <Text>Berdimurat</Text>
             </Flex>
         </Flex>
     );

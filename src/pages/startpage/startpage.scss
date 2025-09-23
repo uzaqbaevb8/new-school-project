@@ -1,4 +1,6 @@
 .main-dark.dark {
+    width: auto;
+    height: auto;
     background-color: #0F172A;
 
     .welcome-div {
@@ -412,7 +414,6 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: transparent;
         border-radius: 9999px;
     }
 
@@ -1072,6 +1073,8 @@ main {
                     line-height: 20px;
                     color: #4B5563;
                 }
+
+                
             }
 
             .border-bottom {

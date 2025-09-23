@@ -218,7 +218,7 @@ const StartPage = () => {
               <div className="our-school">
                 <div className="our-school-left">
                   <div className="school-img">
-                    <img src="/school2.jpg" />
+                    <img src="" />
                   </div>
                   <div className="our-school-bottom">
                     <div className="ourschool-btm-info">
@@ -257,26 +257,26 @@ const StartPage = () => {
                   <div className="ourschool-btm">
                     <div className="teacher-conferience events-boxes border-bottom">
                       <h3>Parent-Teacher Conference</h3>
-                      <p><Calendar color='#CBD5E1' size={14} /> May 15, 2025</p>
-                      <p><Clock color='#CBD5E1' size={14} /> 4:00 PM - 7:00 PM</p>
-                      <p><MapPin color='#CBD5E1' size={14} /> Main Building, Floor 2</p>
+                      <p><Calendar color='#2563EB' size={14} /> May 15, 2025</p>
+                      <p><Clock color='#2563EB' size={14} /> 4:00 PM - 7:00 PM</p>
+                      <p><MapPin color='#2563EB' size={14} /> Main Building, Floor 2</p>
                     </div>
                     <div className="sciens-fair events-boxes border-bottom">
-                      <h3>Parent-Teacher Conference</h3>
-                      <p><Calendar color='#CBD5E1' size={14} /> May 20, 2025</p>
-                      <p><Clock color='#CBD5E1' size={14} /> 10:00 AM - 3:00 PM</p>
-                      <p><MapPin color='#CBD5E1' size={14} /> School Gymnasium</p>
+                      <h3>Science Fair</h3>
+                      <p><Calendar color='#2563EB' size={14} /> May 20, 2025</p>
+                      <p><Clock color='#2563EB' size={14} /> 10:00 AM - 3:00 PM</p>
+                      <p><MapPin color='#2563EB' size={14} /> School Gymnasium</p>
                     </div>
                     <div className="end-year-consepts">
-                      <h3>Parent-Teacher Conference</h3>
-                      <p><Calendar color='#CBD5E1' size={14} /> June 5, 2025</p>
-                      <p><Clock color='#CBD5E1' size={14} /> 6:00 PM - 8:00 PM</p>
-                      <p><MapPin color='#CBD5E1' size={14} /> School Auditorium</p>
+                      <h3>End of Year Concert</h3>
+                      <p><Calendar color='#2563EB' size={14} /> June 5, 2025</p>
+                      <p><Clock color='#2563EB' size={14} /> 6:00 PM - 8:00 PM</p>
+                      <p><MapPin color='#2563EB' size={14} /> School Auditorium</p>
                     </div>
                   </div>
                   <div className="events-btm-div">
                     <Link to="/education" onClick={handleClick} className="all-events-link">
-                      View All Events <ArrowRight size={14} color='#CBD5E1' />
+                      View All Events <ArrowRight size={14} color='#020817' />
                     </Link>
                   </div>
                 </div>
@@ -295,7 +295,6 @@ const StartPage = () => {
                   </button>
                 </Link>
               </div>
-
               <div className="photo-gallery-main">
                 {loading ? (
                   Array.from({ length: 8 }).map((el) => (
