@@ -38,13 +38,6 @@
         }
     }
 
-
-    .welcome-right {
-        .school-png {
-            opacity: 70%;
-        }
-    }
-
     .latest-news {
         .latest-news-left {
             .lnews-topic {
@@ -424,7 +417,13 @@ main {
 
 
 .welcome-right {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 400px;
+    overflow: hidden;
+    min-height: 1px;
+    background: none;
 
     @media (min-width: 1440px) {
         display: flex;
@@ -434,6 +433,40 @@ main {
             max-height: 375px;
             border-radius: 16px;
         }
+    }
+}
+
+.welcome-right img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    display: block;
+    align-self: flex-start; 
+}
+
+@media (min-width: 1440px) {
+    .welcome-right img {
+        width: 600px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1221px) {
+
+    .welcome-right img {
+        width: calc((100vw - 1220px) * 2 + 100px);
+        max-width: 600px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1220px) {
+    .welcome-right img {
+        width: 0;
+        opacity: 0;
+        pointer-events: none;
     }
 }
 
@@ -682,14 +715,17 @@ main {
 
     .our-teachers-top {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: end;
+        flex-direction: row;
 
         .teachers-top-heading {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
             gap: 16px;
-            width: 50%;
+            width: auto;
 
             h1 {
                 font-family: Inter;
@@ -702,12 +738,13 @@ main {
             }
 
             p {
+                width: auto;
+                height: auto;
                 font-family: Inter;
                 font-weight: 400;
-                font-style: Regular;
                 font-size: 16px;
                 line-height: 24px;
-                text-align: left;
+                text-align: center;
                 color: #4B5563;
             }
         }
@@ -718,10 +755,9 @@ main {
             height: 40px;
             display: flex;
             gap: 7px;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             padding: 0 12px;
-            border-radius: 9999px;
             border: 1px solid #E2E8F0;
             background-color: #FFF;
         }
@@ -1074,7 +1110,7 @@ main {
                     color: #4B5563;
                 }
 
-                
+
             }
 
             .border-bottom {

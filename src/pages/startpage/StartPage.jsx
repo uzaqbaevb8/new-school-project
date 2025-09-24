@@ -80,7 +80,7 @@ const StartPage = () => {
                   </div>
                 </div>
                 <div className="welcome-right">
-                  <img src="/school.png" className='school-png' />
+                  <img src="school building.png" />
                 </div>
               </div>
             </div>
