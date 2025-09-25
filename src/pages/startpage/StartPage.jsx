@@ -79,9 +79,12 @@ const StartPage = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="welcome-right">
-                  <img src="school building.png" />
+                <div className='welcome-container'>
+                  <div className="welcome-right">
+                    <img src="school building.png" />
+                  </div>
                 </div>
+
               </div>
             </div>
           </Container>

@@ -319,10 +319,8 @@ main {
 }
 
 .welcome-left {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
+    flex: 1;
+    padding: 20px;
 }
 
 .welcome-headings {
@@ -411,6 +409,7 @@ main {
     }
 
     @media (min-width: 768px) {
+        margin-top: 32px;
         flex-direction: row;
     }
 }
@@ -418,12 +417,9 @@ main {
 
 .welcome-right {
     display: flex;
-    justify-content: flex-end;
     align-items: flex-start;
-    height: 400px;
-    overflow: hidden;
-    min-height: 1px;
-    background: none;
+    /* Rasmni tepaga yopishtiradi */
+    justify-content: flex-start;
 
     @media (min-width: 1440px) {
         display: flex;
@@ -436,6 +432,16 @@ main {
     }
 }
 
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: end;
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
 .welcome-right img {
     width: 600px;
     max-width: 100%;
@@ -443,7 +449,7 @@ main {
     border-radius: 16px;
     transition: width 0.5s ease, opacity 0.5s ease;
     display: block;
-    align-self: flex-start; 
+    align-self: flex-start;
 }
 
 @media (min-width: 1440px) {
