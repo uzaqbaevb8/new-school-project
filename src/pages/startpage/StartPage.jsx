@@ -84,7 +84,6 @@ const StartPage = () => {
                     <img src="school building.png" />
                   </div>
                 </div>
-
               </div>
             </div>
           </Container>

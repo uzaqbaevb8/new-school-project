@@ -5,6 +5,7 @@
 
     .welcome-div {
         background: #1E293B;
+
     }
 
     .welcome-headings {
@@ -21,6 +22,8 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        
+        
 
         .connect-withus-btn {
             color: #F1F5F9;
@@ -300,6 +303,7 @@ main {
 }
 
 .welcome-div {
+    display: flex;
     width: auto;
     height: auto;
     padding: 32px;
@@ -316,11 +320,6 @@ main {
         justify-content: space-between;
         padding: 77px 65px;
     }
-}
-
-.welcome-left {
-    flex: 1;
-    padding: 20px;
 }
 
 .welcome-headings {
@@ -358,8 +357,8 @@ main {
     }
 
     @media (min-width: 1440px) {
+
         gap: 34px;
-        padding-right: 31px;
 
         .welcome-headline {
             font-style: Bold;
@@ -370,9 +369,11 @@ main {
 }
 
 .welcome-buttons {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 32px;
 
     .connect-withus-btn {
         max-width: 210px;
@@ -416,13 +417,12 @@ main {
 
 
 .welcome-right {
+    overflow: hidden;
+    transition: width 0.5s ease;
     display: flex;
-    align-items: flex-start;
-    /* Rasmni tepaga yopishtiradi */
-    justify-content: flex-start;
 
     @media (min-width: 1440px) {
-        display: flex;
+        width: 500px;
 
         .school-png {
             max-width: 500px;
@@ -435,43 +435,35 @@ main {
 .welcome-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: end;
+    align-items: flex;
+    justify-content: flex-end;
     position: relative;
-    top: 0;
-    height: auto;
+    overflow: hidden;
 }
 
 .welcome-right img {
-    width: 600px;
-    max-width: 100%;
     height: auto;
     border-radius: 16px;
-    transition: width 0.5s ease, opacity 0.5s ease;
-    display: block;
-    align-self: flex-start;
+    
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
     .welcome-right img {
-        width: 600px;
-        opacity: 1;
+        width: 100%;
+
     }
 }
 
-@media (max-width: 1440px) and (min-width: 1221px) {
-
+@media (max-width: 1440px){
     .welcome-right img {
-        width: calc((100vw - 1220px) * 2 + 100px);
-        max-width: 600px;
-        opacity: 1;
+        display: flex;
     }
 }
 
 @media (max-width: 1220px) {
     .welcome-right img {
-        width: 0;
-        opacity: 0;
+        display: none;
+        width: 100%;
         pointer-events: none;
     }
 }
