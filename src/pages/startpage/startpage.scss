@@ -19,11 +19,13 @@
     }
 
     .welcome-buttons {
-        display: flex;
+        display: grid;
         flex-direction: column;
         gap: 16px;
-        
-        
+
+
+
+
 
         .connect-withus-btn {
             color: #F1F5F9;
@@ -325,7 +327,7 @@ main {
 .welcome-headings {
     display: flex;
     flex-direction: column;
-    gap: 27px;
+    gap: 26px;
 
     .welcome-headline {
         font-family: Inter;
@@ -369,10 +371,9 @@ main {
 }
 
 .welcome-buttons {
-    width: 100%;
     display: flex;
-    flex-direction: column;
     gap: 16px;
+    flex-direction: column;
     margin-top: 32px;
 
     .connect-withus-btn {
@@ -416,6 +417,7 @@ main {
 }
 
 
+
 .welcome-right {
     overflow: hidden;
     transition: width 0.5s ease;
@@ -433,18 +435,103 @@ main {
 }
 
 .welcome-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex;
-    justify-content: flex-end;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-students {
+    display: none;
+}
+
+.number-students {
+    position: absolute;
+    bottom: -20px;
+    /* Rasmga nisbatan pastga chiqadi */
+    left: -33px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.number-students img {
+    background: #DBEAFE;
+    padding: 10px;
+    border-radius: 9999px;
+}
+
+.students-information {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.students-information h5 {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.students-information p {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: 'Regular';
+}
+
+.Excellence-in-Education {
+    position: absolute;
+    top: -32px;
+    right: -24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.Excellence-in-Education img {
+    background: #DBEAFE;
+    padding: 10px;
+    border-radius: 9999px;
+}
+
+.Excellence-in-Education h5 {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Excellence-in-Education p {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .welcome-right img {
-    height: auto;
+    max-width: 600px;
+    background-size: cover;
+    background-position: center;
     border-radius: 16px;
-    
+    position: relative;
+
 }
 
 @media (min-width: 768px) {
@@ -454,7 +541,7 @@ main {
     }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
     .welcome-right img {
         display: flex;
     }
@@ -462,6 +549,18 @@ main {
 
 @media (max-width: 1220px) {
     .welcome-right img {
+        display: none;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .number-students {
+        display: none;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .Excellence-in-Education {
         display: none;
         width: 100%;
         pointer-events: none;
@@ -706,21 +805,43 @@ main {
     }
 }
 
+@media (min-width:768px) {
+    .our-teachers-top {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: end;
+    }
+}
+
+@media (min-width:1440px) {
+    .our-teachers-top {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: end;
+    }
+
+    .teachers-top-heading {
+        margin: 0 152px;
+    }
+}
+
 .our-teachers {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    justify-content: center;
 
     .our-teachers-top {
         display: flex;
-        justify-content: end;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 48px;
+        align-items: end;
 
         .teachers-top-heading {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-align: center;
             align-items: center;
             gap: 16px;
             width: auto;
@@ -753,11 +874,11 @@ main {
             height: 40px;
             display: flex;
             gap: 7px;
-            justify-content: space-around;
             align-items: center;
             padding: 0 12px;
             border: 1px solid #E2E8F0;
             background-color: #FFF;
+            border-radius: 9999px;
         }
     }
 
@@ -1197,11 +1318,7 @@ main {
     }
 
     .photo-gallery-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 32px;
-
     }
 
     .photo-gallery-main {

@@ -80,6 +80,20 @@ const StartPage = () => {
                   </div>
                 </div>
                 <div className='welcome-container'>
+                  <div className='number-students'>
+                    <img src='/500+students.svg' alt='500+ students' />
+                    <div className='students-information'>
+                      <h5>500+ Students</h5>
+                      <p>Join our community</p>
+                    </div>
+                  </div>
+                  <div className='Excellence-in-Education'>
+                    <img src="/excellence.svg" alt="excellence" />
+                    <div className='Information about Excellence'>
+                      <h5>Excellence in Education</h5>
+                      <p>Since 1998</p>
+                    </div>
+                  </div>
                   <div className="welcome-right">
                     <img src="school building.png" />
                   </div>
@@ -220,7 +234,7 @@ const StartPage = () => {
               <div className="our-school">
                 <div className="our-school-left">
                   <div className="school-img">
-                    <img src="" />
+                    <img src="school building.png" />
                   </div>
                   <div className="our-school-bottom">
                     <div className="ourschool-btm-info">
