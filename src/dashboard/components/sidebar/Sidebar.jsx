@@ -104,7 +104,7 @@ export const Sidebar = () => {
             style={{ borderRight: "1px solid #2C2E33" }}
         >
             <Title order={4} align="center" style={{ fontSize: 16 }}>
-                {t("politechnicum")}
+                {t("40 School")}
             </Title>
 
             <ScrollArea w={"auto"} h={"100%"} scrollbarSize={"hidden"} scrollbars="y">

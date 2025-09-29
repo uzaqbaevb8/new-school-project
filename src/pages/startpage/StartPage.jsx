@@ -45,7 +45,6 @@ const StartPage = () => {
   }
 
 
-
   useEffect(() => {
     getHome();
   }, []);

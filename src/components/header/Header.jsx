@@ -109,7 +109,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
                   40
                 </NavLink>
                 <NavLink onClick={handleClick} to="/" className="logo-text">
-                  40-School
+                  40 School
                 </NavLink>
               </div>
             </div>

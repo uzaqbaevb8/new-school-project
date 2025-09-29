@@ -23,10 +23,6 @@
         flex-direction: column;
         gap: 16px;
 
-
-
-
-
         .connect-withus-btn {
             color: #F1F5F9;
             background: #121f36;
@@ -328,6 +324,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 26px;
+    margin-right: 0;
+
+    @media (min-width: 1420px) {
+        .welcome-headings {
+            margin-right: 35px;
+        }
+    }
+
 
     .welcome-headline {
         font-family: Inter;
@@ -359,13 +363,13 @@ main {
     }
 
     @media (min-width: 1440px) {
-
         gap: 34px;
 
         .welcome-headline {
             font-style: Bold;
             font-size: 60px;
             line-height: 60px;
+
         }
     }
 }
@@ -836,7 +840,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 48px;
-        align-items: end;
+        align-items: center;
 
         .teachers-top-heading {
             display: flex;
@@ -915,7 +919,6 @@ main {
 
 
                 @media (min-width: 1440px) {
-                    // width: 280px;
                     height: 380px;
                 }
 
@@ -926,7 +929,6 @@ main {
                     border-top-right-radius: 16px;
 
                     @media (min-width: 1440px) {
-                        // width: 280px;
                         height: 280px;
                     }
                 }

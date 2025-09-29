@@ -66,7 +66,7 @@ export const Footer = ({ darkMode }) => {
                 <h3>Contact Us</h3>
                 <div className="contact-us">
                   <p>
-                    <MapPin className='contact-us-icon' size={22} />uzbekistan, karakalpakstan, Nukus, orakbalga, 40-mektep
+                    <MapPin className='contact-us-icon' size={40} />uzbekistan, karakalpakstan, Nukus, orakbalga, 40-mektep
                   </p>
                   <p>
                     <Phone className='contact-us-icon' size={17} /> +1 234 567 890
