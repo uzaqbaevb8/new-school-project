@@ -215,7 +215,7 @@ main {
 .tabs {
     width: fit-content;
     max-width: 100%;
-    height: 40px;
+    height: auto;
     display: flex;
     background: #EFF6FF;
     border-radius: 50px;
@@ -342,9 +342,11 @@ main {
 
     .leadership-headline {
         h1 {
+            display: flex;
+            width: auto;
+            justify-content: center;
             font-family: Inter;
             font-weight: 700;
-            font-style: Bold;
             font-size: 30px;
             color: #111827;
             line-height: 36px;
